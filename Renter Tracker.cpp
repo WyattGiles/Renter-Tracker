@@ -11,19 +11,18 @@ void write ();
 void newwrite ();
 int main(){
 	string what = "";
-	string file = "";
 	cout << "'stop' will end the program." << endl << endl;
 	while(what != "stop"){
-		cout << "What would you like to do?" << endl << 
+		cout << "What would you like to do?" << endl << "add, new, read" << endl;
 		getline (cin, what);
 		if (what == "add"){
-//			write();
+			write();
 		}	
 		else if (what == "new"){
-//			write();
+			newwrite();
 		}
 		else if (what == "read"){
-			cout << "What file do you want to read?" << endl; 		
+			read();		
 		}
 		else if (what == "stop"){
 			return 0;
@@ -32,4 +31,15 @@ int main(){
 			cout << "!Not an option!" << endl;
 		}
 	}
+}//end main function
+void read (){
+	string file = "";
+	cout << "What file do you want to read?" << endl;
+	
+}//end read function
+void write (){
+	cout << "What is the file name?" << endl;
+}//end write function
+void newwrite (){
+	cout << "What is the new file's name?" << endl;
 }
