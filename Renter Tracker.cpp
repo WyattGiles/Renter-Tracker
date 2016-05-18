@@ -41,5 +41,13 @@ void write (){
 	cout << "What is the file name?" << endl;
 }//end write function
 void newwrite (){
+	string filename = "";
+	string test = "";
 	cout << "What is the new file's name?" << endl;
+	cin >> filename;
+	fstream file;
+	file.open(filename);
+	cin >> test;
+	file << test << endl;
+	file.close();
 }
