@@ -35,10 +35,26 @@ int main(){
 void read (){
 	string file = "";
 	cout << "What file do you want to read?" << endl;
-	
+	cin >> file;
+	{
+		time_t currentTime;
+		struct tm *localTime;
+
+		time( &currentTime );                   // Get the current time
+		localTime = localtime( &currentTime );  // Convert the current time to the local time
+
+		int Day    = localTime->tm_mday;
+		int Month  = localTime->tm_mon + 1;
+		int Year   = localTime->tm_year + 1900;
+
+		std::cout << "And the current date is: " << Day << "/" << Month << "/" << Year << std::endl;
+	}
+	 
 }//end read function
 void write (){
 	cout << "What is the file name?" << endl;
+
+	 
 }//end write function
 void newwrite (){
 	string filename = "";
@@ -50,4 +66,5 @@ void newwrite (){
 	cin >> test;
 	file << test << endl;
 	file.close();
+	
 }
