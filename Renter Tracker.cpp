@@ -46,7 +46,7 @@ void newwrite (){
 	cout << "What is the new file's name?" << endl;
 	cin >> filename;
 	fstream file;
-	file.open(filename);
+	file.open(filename, ios::app);
 	cin >> test;
 	file << test << endl;
 	file.close();
