@@ -66,5 +66,9 @@ void newwrite (){
 	cin >> test;
 	file << test << endl;
 	file.close();
+	fstream textfile;
+	textfile.open("Text", ios::app);
+	textfile << filename << endl;
+	textfile.close();
 	
 }
