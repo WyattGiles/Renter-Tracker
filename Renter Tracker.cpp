@@ -103,14 +103,14 @@ void newwrite (){
 	fstream file;
 	file.open(filename, ios::app);
 	cout << "What is the name of the item?" << endl;
-	cin >> name;
+	getline (cin, name);
 	cout << "What is the constumers name?" << endl;
 	cin >> user;
 	cout << "What is their address?" << endl;
-	cin >> addr;
+	getline (cin, addr);
 	cout << "When will it be back? MM/DD/YYYY" << endl;
 	cin >> date;
-	file << name << endl << user << endl << addr << endl << date << "--------------------" << endl;
+	file << name << endl << user << endl << addr << endl << date << endl << "--------------------" << endl;
 	file.close();
 	fstream textfile;
 	textfile.open("Text", ios::app);
@@ -119,4 +119,5 @@ void newwrite (){
 	
 }
 void sortFile(){
+	
 }
