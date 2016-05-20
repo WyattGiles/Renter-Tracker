@@ -2,6 +2,18 @@
 This Program allows you to write to multiple files of different objects. It will keep track of dates, items, addresses, and the person it was given to. It will sort the information by when the object is due in the files.
 
 # Example
+Vacuums
+
+-----------------
+Vacuum321
+
+Lily Phillips
+
+321 N 250 E Hurricane, Utah, 84725
+
+10/1/2016
+
+-----------------
 
 Vacuum123
 
