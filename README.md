@@ -1,6 +1,7 @@
 # Renter-Tracker
-A program that keeps track of items that are rented.
+This Program allows you to write to multiple files of different objects. It will keep track of dates, items, addresses, and the person it was given to. It will sort the information by when the object is due in the files.
 
-Wyatt Giles
-Tanner Davis
+# Contributors
+Wyatt Giles,
+Tanner Davis,
 Brandan Ivie
