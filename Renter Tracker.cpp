@@ -105,7 +105,7 @@ void newwrite (){
 	cout << "What is the name of the item?" << endl;
 	getline (cin, name);
 	cout << "What is the constumers name?" << endl;
-	cin >> user;
+	getline (cin, user);
 	cout << "What is their address?" << endl;
 	getline (cin, addr);
 	cout << "When will it be back? MM/DD/YYYY" << endl;
