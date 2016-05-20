@@ -11,7 +11,6 @@
 using namespace std;
 void read ();
 void write ();
-void newwrite ();
 void sortFile();
 int main(){
 	int menuOption = 0;
@@ -20,9 +19,8 @@ int main(){
 		//display menu and get option
 		cout << endl;
 		cout << "1 Read the file" << endl;
-		cout << "2 Add to the file " << endl;
-		cout << "3 Create a new file" << endl;
-		cout << "4 End Program " << endl;
+		cout << "2 Create a new file" << endl;
+		cout << "3 End Program " << endl;
 		cout << "Enter menu option: ";
 		cin >> menuOption;
 		cout << endl;
@@ -36,9 +34,6 @@ int main(){
 				write();
 				break;
 			case 3:
-				newwrite();
-				break;
-			case 4:
 				exitVar = 0;
 				break;
 			default:
@@ -72,27 +67,9 @@ void read (){
 		}
 	}
 	whatfile.close();
-/*	{
-		time_t currentTime;
-		struct tm *localTime;
-
-		time( &currentTime );                   // Get the current time
-		localTime = localtime( &currentTime );  // Convert the current time to the local time
-
-		int Day    = localTime->tm_mday;
-		int Month  = localTime->tm_mon + 1;
-		int Year   = localTime->tm_year + 1900;
-
-		std::cout << "And the current date is: " << Day << "/" << Month << "/" << Year << std::endl;
-	}*/
-	 
 }//end read function
-void write (){
-	cout << "What is the file name?" << endl;
 
-	 
-}//end write function
-void newwrite (){
+void write (){
 	string filename = "";
 	string name = ""; // name of object
 	string user = ""; // name of person
@@ -103,6 +80,7 @@ void newwrite (){
 	fstream file;
 	file.open(filename, ios::app);
 	cout << "What is the name of the item?" << endl;
+	cin.ignore(); // makes next line run
 	getline (cin, name);
 	cout << "What is the constumers name?" << endl;
 	getline (cin, user);
