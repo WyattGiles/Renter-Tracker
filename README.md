@@ -1,10 +1,10 @@
 # Renter-Tracker
-This Program allows you to write to multiple files of different objects. It will keep track of dates, items, addresses, and the person it was given to. It will sort the information by when the object is due in the files.
+This Program allows you to write to multiple files of different objects. It will keep track of dates, items, addresses, and a person. In the future we are going to sort the information by the date it is due in the files.
+
+# How you can help
+Submit Issues, Pull Requests
 
 # Example
-Vacuums
-
------------------
 Vacuum321
 
 Lily Phillips
@@ -23,6 +23,7 @@ John Smith
 
 12/15/2016
 
+------------------
 # Contributors
 Wyatt Giles,
 Tanner Davis,
