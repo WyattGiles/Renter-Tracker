@@ -1,6 +1,9 @@
 # Renter-Tracker
 This Program allows you to write to multiple files of different objects. It will keep track of dates, items, addresses, and a person. In the future we are going to sort the information by the date it is due in the files.
 
+#Motivation
+We want to help both big and small compaines have a nice program that keeps track of all their items that they are currently renting out but also have a history of items they have rented out.
+
 # How you can help
 Submit Issues, Pull Requests
 
@@ -24,6 +27,9 @@ John Smith
 12/15/2016
 
 ------------------
+
+#Programs Used
+CodeRunner
 
 
 # Contributors
