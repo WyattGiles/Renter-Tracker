@@ -101,17 +101,16 @@ void write (){
 	fstream textfile;
 	textfile.open("Text", ios::app);
 	textfile << filename << endl;
-//checks to see if filename is already written-can also use new function to write to a file
-/*	while(!textfile.eof()){
+//checks to see if filename is already written
+	while(!textfile.eof()){
 		getline (textfile, filecontents);
 		if(filecontents == filename){
 			x = false;
 		}
-		if(x == true){
-			textfile << filename << endl;
-		}
 	}
-*/
+	if(x == true){
+		textfile << filename << endl;
+	}
 	textfile.close();
 }
 /*
