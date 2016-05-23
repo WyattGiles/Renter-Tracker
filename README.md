@@ -24,7 +24,11 @@ John Smith
 12/15/2016
 
 ------------------
+
+
 # Contributors
-Wyatt Giles,
-Tanner Davis,
-Brandan Ivie
+Wyatt Giles - worked on read and write function
+
+Tanner Davis - worked on main function
+
+Brandan Ivie - worked on edit function
