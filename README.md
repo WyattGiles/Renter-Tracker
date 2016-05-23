@@ -27,7 +27,7 @@ John Smith
 
 
 # Contributors
-Wyatt Giles - worked on read and write function
+Wyatt Giles - worked on main, read, edit, and write functions
 
 Tanner Davis - worked on main function
 
